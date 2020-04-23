@@ -1,0 +1,338 @@
+/**************************GENERAL**************************/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+
+}
+
+a {
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+}
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.active {
+	background: #bf7b0f;
+	border-radius: 3px;
+}
+
+img {
+	width: 100%;
+}
+
+main {
+	min-height: calc(135vh - 296.4px - 124.4px)
+}
+
+.container {
+	padding-top: 296.4px;
+}
+
+
+
+
+/**************************HEADER**************************/
+
+header {
+	background: #f5b042;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+header .logo-container {
+	padding: 20px;
+}
+	
+header img	{
+	width: 200px;
+}
+
+/**************************NAVIGATION**************************/
+
+nav {
+	background: #bf7b0f;
+	padding: 10px;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav li a {
+	color: #fff;
+	display: inline-block;
+	padding: 5px 10px;
+}
+
+
+/**************************HOMEPAGE**************************/
+
+#benvenuti {
+	margin-top: 296.4px;
+}
+
+#scopri h1 {
+	text-align: center;
+	font-size: 70px;
+}
+
+#homepage {
+	padding-top: 0;
+}
+
+
+
+
+
+/**************************GALLERY**************************/
+
+#gallery {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#gallery img {
+	width: 100%;
+}
+
+#gallery .item {
+	width: 50%;
+	float: left;
+	padding: 15px;
+	position: relative;
+}
+
+#gallery .caption img {
+	width: 40px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+/**************************ABOUT**************************/
+
+#about img {
+	border-radius: 100%;
+	padding: 15px 0;
+}
+
+/**************************CONTACT**************************/
+
+#contact ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+#contact li {
+	padding: 5px 0;
+}
+
+/**************************FOOTER**************************/
+
+footer.main {
+	text-align: center;
+	padding: 15px;
+}
+
+footer.main img {
+	width: 50px;
+}
+
+footer.main a {
+	display: inline-block;
+	padding: 5px 10px;
+
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+/**************************GALLERY**************************/
+
+	#gallery .item {
+		width: 33.333%;
+		}
+
+/**************************HOMEPAGE**************************/
+
+#perche_sundays .testo_perche {
+	padding: 15px;
+	float: left;
+	width: 50%
+}
+
+#perche_sundays .foto_cuscini {
+	width: 50%;
+	float: right;
+	padding: 15px;
+}
+
+.foto_cuscini img {
+	border-radius: 100%;
+}
+
+
+/**************************ABOUT**************************/
+
+	#about img {
+		width: 70%;
+		text-align: center;
+	}
+
+	#about .profile-pic {
+		width: 50%;
+		float: left;
+		padding: 15px;
+	}
+
+	#about .description {
+		width: 50%;
+		float: right;
+		padding: 15px;
+	}
+
+
+/**************************CONTACT**************************/
+
+	#contact .info, #contact .contacts {
+		padding: 15px;
+	}
+
+	#contact .info {
+		float: left;
+		width: 70%;
+	}
+
+	#contact .contacts {
+		float: right;
+		width: 30%;
+
+	}
+
+/**************************FOOTER**************************/
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+/**************************GALLERY**************************/
+
+	#gallery .item {
+		width: 100%;
+	 }
+/**************************HOMEPAGE**************************/
+
+#login {
+	margin-top: 50px;
+}
+
+#login h2 {
+	text-align: center;
+}
+
+#login img {
+	width: 50%;
+	margin-left: 90px;
+}
+
+#bottom h1 {
+	text-align: center;
+	color: #f5b042;
+}
+
+}
+
+@media only screen and (min-width: 992px) {
+
+	header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 140px;
+	}
+
+	header img {
+		width: 120px;
+	}
+
+	nav {
+		background: #f5b042;
+	}
+
+	#benvenuti {
+		margin-top: 135px;
+	}
+
+	.container {
+		padding-top: 135px;
+	}
+
+	#gallery .item {
+		transition: opacity .3s;
+	}
+
+	#gallery .item:hover {
+
+	opacity: .7;
+	}
+	
+	nav li a {
+		transition: background .3s;
+	}
+	nav li a:hover {
+		background: #bf7b0f;
+		border-radius: 3px;
+	}
+
+	#login {
+		display: flex;
+		justify-content: center;
+	}
+
+	#login img:hover {
+		opacity: .7;
+
+	}
+
+	#accedi {
+		margin-right: 100px;
+	}
+
+	#iscriviti {
+		margin-left: 100px;
+	}
+
+	#bottom h1 {
+	font-size: 80px;
+	text-align: center;
+	color: #f5b042;
+}
+}
